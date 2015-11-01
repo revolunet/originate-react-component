@@ -1,8 +1,9 @@
 module.exports = {
   builder: 'zuul-builder-webpack',
-  webpack: {
-    // webpack config goes here
-    // you can also just do require('./webpack.config')
-    // to reference your webpack configuration
-  }
+  ui: 'mocha-qunit',
+  browsers: [{
+    name: 'chrome',
+    version: 'latest'
+  }],
+  webpack: require('./webpack.build')
 };
