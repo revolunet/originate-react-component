@@ -18,7 +18,7 @@ exports.before = function(next, env) {
       // keywords: {type: 'array'},
       authors: {message: 'authors (comma separated)'},
       keywords: {message: 'keywords (comma separated)'},
-      reactVersion: {default: '^0.13.3'},
+      reactVersion: {default: '^0.14'},
       exposedComponent: {description: 'initial component', default: buildFriendlyName(env.args[0])}
     }
   };

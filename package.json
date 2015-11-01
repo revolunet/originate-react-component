@@ -1,18 +1,19 @@
 {
-  "name": "originate-react-component",
+  "name": "originate-react-component-revolunet",
   "version": "0.1.3",
   "description": "loom origin for creating distributable react components",
   "repository": {
     "type": "git",
-    "url": "https://github.com/knomedia/originate-react-component"
+    "url": "https://github.com/revolunet/originate-react-component"
   },
-  "homepage": "https://github.com/knomedia/originate-react-component",
-  "bugs": "https://github.com/knomedia/originate-react-component/issues",
+  "homepage": "https://github.com/revolunet/originate-react-component",
+  "bugs": "https://github.com/revolunet/originate-react-component/issues",
   "scripts": {
-    "test": "NODE_ENV=test node_modules/.bin/karma start --browsers Firefox --single-run"
+    "test": "NODE_ENV=test zuul --local 8080 -- test.js"
   },
   "authors": [
-    "Jason Madsen"
+    "Jason Madsen",
+    "Julien Bouquillon"
   ],
   "license": "MIT",
   "dependencies": {
@@ -22,16 +23,8 @@
     "title-case": "^1.0.1"
   },
   "devDependencies": {
-    "browserify": "4.2.3",
-    "browserify-shim": "3.6.0",
     "mocha": "1.20.1",
     "envify": "1.2.0",
-    "expect": "0.1.1",
-    "karma": "0.12.16",
-    "karma-browserify": "^0.2.1",
-    "karma-chrome-launcher": "0.1.4",
-    "karma-cli": "0.0.4",
-    "karma-firefox-launcher": "0.1.3",
-    "karma-mocha": "0.1.3"
+    "expect": "0.1.1"
   }
 }

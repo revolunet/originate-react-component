@@ -1,11 +1,14 @@
-import React from 'react/addons';
-let TestUtils = React.addons.TestUtils;
-import {{exposedComponent}} from '../../index';
+
+import TestUtils from 'react-addons-test-utils';
+
 import { ok, equal } from 'assert';
 
-/* eslint func-names:0 */
-describe('{{name}}', function() {
-  it('should have tests', function() {
-    ok(false);
-  });
+import {{exposedComponent}} from '../../index';
+
+suite('{{name}}');
+
+test('it should have tests', function() {
+  ok(false);
 });
+
+
