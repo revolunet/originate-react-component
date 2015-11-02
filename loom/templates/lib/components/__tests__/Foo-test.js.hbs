@@ -1,14 +1,15 @@
-
 import TestUtils from 'react-addons-test-utils';
 
-import { ok, equal } from 'assert';
+import  {{exposedComponent}} from '../../index';
 
-import {{exposedComponent}} from '../../index';
+var assert = require('assert');
 
-suite('{{name}}');
+describe('{{name}}', function(){
+    it('should work', function(){
+        assert.equal(1, 1);
+    });
 
-test('it should have tests', function() {
-  ok(false);
+    it('should not work', function(){
+        assert.equal(1, 2);
+    });
 });
-
-
