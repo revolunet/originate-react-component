@@ -9,7 +9,7 @@ import {{exposedComponent}} from '../{{exposedComponent}}';
 describe('{{exposedComponent}}', () => {
   it('works', () => {
     let renderer = createRenderer();
-    renderer.render(<Button name='John' click={ () => {} } />);
+    renderer.render(<{{exposedComponent}} name='John' click={ () => {} } />);
     let actualElement = renderer.getRenderOutput();
     let expectedElement = <div onClick={ () => {} }>John</div>;
     expect(actualElement).toEqualJSX(expectedElement);
@@ -19,7 +19,7 @@ describe('{{exposedComponent}}', () => {
     let renderer = createRenderer();
     let hasClicked = false;
     let click = () => hasClicked = true;
-    renderer.render(<Button name='John' click={ click } />);
+    renderer.render(<{{exposedComponent}} name='John' click={ click } />);
     renderer.getRenderOutput().props.onClick();
     expect(hasClicked).toBe(true);
   });
