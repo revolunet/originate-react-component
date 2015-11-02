@@ -1,14 +1,8 @@
 import React from 'react';
 
-export default React.createClass({
-  displayName: '{{exposedComponent}}',
-
+export default class {{exposedComponent}} extends React.Component {
   render() {
-    return (
-      <div>
-        {{exposedComponent}}
-      </div>
-    );
+    return <div onClick={ this.props.click }>{ this.props.name }</div>;
   }
+}
 
-});
